@@ -37,9 +37,9 @@ int main(int argc, char* argv[]) {
     std::cout << "Reading " << numGamesToRead << " games:\n\n";
 
     for (int i = 0; i < numGamesToRead; i++) {
-        std::cout << "Title: " << games[i].title << std::endl;
-        std::cout << "Description: " << games[i].description << std::endl;
-        std::cout << "Popularity: " << games[i].popularity << std::endl;
+        std::cout << "Title: " << games[i].getTitle() << std::endl;
+        std::cout << "Description: " << games[i].getShortDescription() << std::endl;
+        std::cout << "Popularity: " << games[i].getPopularity() << std::endl;
         std::cout << "------------------------" << std::endl;
     }
 
